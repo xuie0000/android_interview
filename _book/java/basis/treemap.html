@@ -1363,9 +1363,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.16" data-path="../../android/advance/dialog-popupwindow">
+        <li class="chapter " data-level="3.2.16" data-path="../../android/advance/dialog-popupwindow.html">
             
-                <span>
+                <a href="../../android/advance/dialog-popupwindow.html">
             
                     
                         <b>3.2.16.</b>
@@ -3695,9 +3695,9 @@
                                 
                                 <h3 id="1-_&#x6982;&#x8FF0;"><a name="1-_&#x6982;&#x8FF0;" class="plugin-anchor" href="#1-_&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x6982;&#x8FF0; </h3>
 <blockquote>
-<p>A <strong>Red-Black tree </strong>based NavigableMap implementation. The map is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used.<br>This implementation provides guaranteed <strong>log(n) time cost </strong>for the containsKey, get, put and remove operations. Algorithms are adaptations of those in Cormen, Leiserson, and Rivest&#x2019;s Introduction to Algorithms.</p>
+<p>A <strong>Red-Black tree</strong> based NavigableMap implementation. The map is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used.<br>This implementation provides guaranteed <strong>log(n) time cost </strong>for the containsKey, get, put and remove operations. Algorithms are adaptations of those in Cormen, Leiserson, and Rivest&#x2019;s Introduction to Algorithms.</p>
 </blockquote>
-<p>&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B66;&#x4E60;&#x8FC7;HashMap&#x548C;LinkedHashMap&#x4E86;&#xFF0C;HashMap&#x4E0D;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x6709;&#x5E8F;&#xFF0C;LinkedHashMap&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x63D2;&#x5165;&#x987A;&#x5E8F;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;Map&#x53EF;&#x4EE5;&#x4FDD;&#x6301;key&#x7684;&#x5927;&#x5C0F;&#x987A;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x5229;&#x7528;TreeMap&#x4E86;&#x3002;</p>
+<p>&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B66;&#x4E60;&#x8FC7;HashMap&#x548C;LinkedHashMap&#x4E86;&#xFF0C;HashMap&#x4E0D;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x6709;&#x5E8F;&#xFF0C;LinkedHashMap&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x63D2;&#x5165;&#x987A;&#x5E8F;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;Map&#x53EF;&#x4EE5;<strong>&#x4FDD;&#x6301;key&#x7684;&#x5927;&#x5C0F;&#x987A;&#x5E8F;</strong>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x5229;&#x7528;TreeMap&#x4E86;&#x3002;</p>
 <pre><code class="lang-java">TreeMap&lt;Integer, String&gt; tmap = <span class="hljs-keyword">new</span> TreeMap&lt;Integer, String&gt;();
 tmap.put(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;&#x8BED;&#x6587;&quot;</span>);
 tmap.put(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;&#x82F1;&#x8BED;&quot;</span>);
@@ -3759,13 +3759,14 @@ tmap.put(<span class="hljs-number">8</span>, <span class="hljs-string">&quot;&#x
                 <span class="hljs-keyword">return</span> t.setValue(value);
         } <span class="hljs-keyword">while</span> (t != <span class="hljs-keyword">null</span>);
     }
-        <span class="hljs-comment">// &#x5982;&#x679C;&#x8BE5;&#x8282;&#x70B9;&#x672A;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x65B0;&#x5EFA;</span>
+    <span class="hljs-comment">// &#x5982;&#x679C;&#x8BE5;&#x8282;&#x70B9;&#x672A;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x65B0;&#x5EFA;</span>
     Entry&lt;K,V&gt; e = <span class="hljs-keyword">new</span> Entry&lt;&gt;(key, value, parent);
     <span class="hljs-keyword">if</span> (cmp &lt; <span class="hljs-number">0</span>)
         parent.left = e;
     <span class="hljs-keyword">else</span>
         parent.right = e;
-        <span class="hljs-comment">// &#x7EA2;&#x9ED1;&#x6811;&#x5E73;&#x8861;&#x8C03;&#x6574;</span>
+
+    <span class="hljs-comment">// &#x7EA2;&#x9ED1;&#x6811;&#x5E73;&#x8861;&#x8C03;&#x6574;</span>
     fixAfterInsertion(e);
     size++;
     modCount++;
@@ -3845,7 +3846,7 @@ tmap.put(<span class="hljs-number">8</span>, <span class="hljs-string">&quot;&#x
 <p><strong>&#x6709;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x8282;&#x70B9;</strong>&#xFF0C;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x80AF;&#x5B9A;&#x5728;&#x53F3;&#x5B50;&#x6811;&#x4E2D;&#xFF0C;&#x800C;&#x53F3;&#x5B50;&#x6811;&#x4E2D;&#x201C;&#x6700;&#x5DE6;&#x201D;&#x7684;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x5219;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x7136;&#x662F;<strong>&#x53F3;&#x5B50;&#x6811;&#x7684;&#x201C;&#x6700;&#x5DE6;&#x8282;&#x70B9;&#x201D;</strong>&#xFF0C;&#x5C31;&#x597D;&#x50CF;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;<br><img src="https://cloud.githubusercontent.com/assets/1736354/7045283/652d00c4-de2f-11e4-8475-1a2f46afc380.png" alt="" title="treemap1"></p>
 <p><strong>&#x65E0;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x8282;&#x70B9;</strong>&#xFF0C;&#x5148;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x6240;&#x5728;&#x7684;&#x5DE6;&#x5B50;&#x6811;(&#x53F3;&#x56FE;)&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x6240;&#x5728;&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x7684;&#x7236;&#x8282;&#x70B9;(&#x7EFF;&#x8272;&#x8282;&#x70B9;)&#xFF0C;&#x5C31;&#x662F;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;<br><img src="https://cloud.githubusercontent.com/assets/1736354/7045284/68279686-de2f-11e4-8310-c9f76b3f52ab.png" alt="" title="treemap2"></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; ruheng.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2017-08-22 15:53:58
+2018-12-29 11:29:28
 </span></footer>
                                 
                                 </section>
@@ -3889,7 +3890,7 @@ tmap.put(<span class="hljs-number">8</span>, <span class="hljs-string">&quot;&#x
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java集合——TreeMap","level":"2.1.5","depth":2,"next":{"title":"Java集合——LinkedHashMap","level":"2.1.6","depth":2,"path":"java/basis/LinkedHashMap.md","ref":"java/basis/LinkedHashMap.md","articles":[]},"previous":{"title":"Java集合——HashMap","level":"2.1.4","depth":2,"path":"java/basis/hashmap.md","ref":"java/basis/hashmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © ruheng.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/LRH1993/android_interview"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"LRH1993/android_interview","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/LRH1993/android_interview/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"ruheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android校招面试指南","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://lruheng.com/"}},"gitbook":"3.2.3","description":"Android面试必备，记录自己的秋招之路"},"file":{"path":"java/basis/treemap.md","mtime":"2017-08-22T07:53:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-16T23:10:00.749Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Java集合——TreeMap","level":"2.1.5","depth":2,"next":{"title":"Java集合——LinkedHashMap","level":"2.1.6","depth":2,"path":"java/basis/LinkedHashMap.md","ref":"java/basis/LinkedHashMap.md","articles":[]},"previous":{"title":"Java集合——HashMap","level":"2.1.4","depth":2,"path":"java/basis/hashmap.md","ref":"java/basis/hashmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © ruheng.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/LRH1993/android_interview"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"LRH1993/android_interview","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/LRH1993/android_interview/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"ruheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android校招面试指南","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://lruheng.com/"}},"gitbook":"3.2.3","description":"Android面试必备，记录自己的秋招之路"},"file":{"path":"java/basis/treemap.md","mtime":"2018-12-29T03:29:28.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T03:41:38.737Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

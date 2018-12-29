@@ -1363,9 +1363,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.16" data-path="../../android/advance/dialog-popupwindow">
+        <li class="chapter " data-level="3.2.16" data-path="../../android/advance/dialog-popupwindow.html">
             
-                <span>
+                <a href="../../android/advance/dialog-popupwindow.html">
             
                     
                         <b>3.2.16.</b>
@@ -3871,32 +3871,32 @@
 </code></pre>
 <h2 id="&#x4E94;&#x3001;android&#x6E90;&#x7801;&#x4E2D;&#x6A21;&#x5F0F;&#x5B9E;&#x73B0;"><a name="&#x4E94;&#x3001;android&#x6E90;&#x7801;&#x4E2D;&#x6A21;&#x5F0F;&#x5B9E;&#x73B0;" class="plugin-anchor" href="#&#x4E94;&#x3001;android&#x6E90;&#x7801;&#x4E2D;&#x6A21;&#x5F0F;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;&#x3001;Android&#x6E90;&#x7801;&#x4E2D;&#x6A21;&#x5F0F;&#x5B9E;&#x73B0;</h2>
 <p>&#x5728;Android&#x6E90;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x5E38;&#x7528;&#x5230;&#x7684;Builder&#x6A21;&#x5F0F;&#x5C31;&#x662F;AlertDialog.Builder&#xFF0C; &#x4F7F;&#x7528;&#x8BE5;Builder&#x6765;&#x6784;&#x5EFA;&#x590D;&#x6742;&#x7684;AlertDialog&#x5BF9;&#x8C61;&#x3002;&#x7B80;&#x5355;&#x793A;&#x4F8B;&#x5982;&#x4E0B; :</p>
-<pre><code class="lang-java">    <span class="hljs-comment">//&#x663E;&#x793A;&#x57FA;&#x672C;&#x7684;AlertDialog  </span>
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showDialog</span><span class="hljs-params">(Context context)</span> </span>{  
-        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.Builder(context);  
-        builder.setIcon(R.drawable.icon);  
-        builder.setTitle(<span class="hljs-string">&quot;Title&quot;</span>);  
-        builder.setMessage(<span class="hljs-string">&quot;Message&quot;</span>);  
-        builder.setPositiveButton(<span class="hljs-string">&quot;Button1&quot;</span>,  
-                <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {  
-                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> whichButton)</span> </span>{  
-                        setTitle(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x5BF9;&#x8BDD;&#x6846;&#x4E0A;&#x7684;Button1&quot;</span>);  
-                    }  
-                });  
-        builder.setNeutralButton(<span class="hljs-string">&quot;Button2&quot;</span>,  
-                <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {  
-                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> whichButton)</span> </span>{  
-                        setTitle(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x5BF9;&#x8BDD;&#x6846;&#x4E0A;&#x7684;Button2&quot;</span>);  
-                    }  
-                });  
-        builder.setNegativeButton(<span class="hljs-string">&quot;Button3&quot;</span>,  
-                <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {  
-                    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> whichButton)</span> </span>{  
-                        setTitle(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x5BF9;&#x8BDD;&#x6846;&#x4E0A;&#x7684;Button3&quot;</span>);  
-                    }  
-                });  
-        builder.create().show();  <span class="hljs-comment">// &#x6784;&#x5EFA;AlertDialog&#xFF0C; &#x5E76;&#x4E14;&#x663E;&#x793A;</span>
-    }
+<pre><code class="lang-java"><span class="hljs-comment">//&#x663E;&#x793A;&#x57FA;&#x672C;&#x7684;AlertDialog  </span>
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showDialog</span><span class="hljs-params">(Context context)</span> </span>{  
+    AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.Builder(context);  
+    builder.setIcon(R.drawable.icon);  
+    builder.setTitle(<span class="hljs-string">&quot;Title&quot;</span>);  
+    builder.setMessage(<span class="hljs-string">&quot;Message&quot;</span>);  
+    builder.setPositiveButton(<span class="hljs-string">&quot;Button1&quot;</span>,  
+            <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {  
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> whichButton)</span> </span>{  
+                    setTitle(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x5BF9;&#x8BDD;&#x6846;&#x4E0A;&#x7684;Button1&quot;</span>);  
+                }  
+            });  
+    builder.setNeutralButton(<span class="hljs-string">&quot;Button2&quot;</span>,  
+            <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {  
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> whichButton)</span> </span>{  
+                    setTitle(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x5BF9;&#x8BDD;&#x6846;&#x4E0A;&#x7684;Button2&quot;</span>);  
+                }  
+            });  
+    builder.setNegativeButton(<span class="hljs-string">&quot;Button3&quot;</span>,  
+            <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {  
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> whichButton)</span> </span>{  
+                    setTitle(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x5BF9;&#x8BDD;&#x6846;&#x4E0A;&#x7684;Button3&quot;</span>);  
+                }  
+            });  
+    builder.create().show();  <span class="hljs-comment">// &#x6784;&#x5EFA;AlertDialog&#xFF0C; &#x5E76;&#x4E14;&#x663E;&#x793A;</span>
+}
 </code></pre>
 <p>&#x7ED3;&#x679C; : <a href="https://github.com/simple-android-framework-exchange/android_design_patterns_analysis/blob/master/builder/mr.simple/images/result.png" target="_blank"><img src="https://github.com/simple-android-framework-exchange/android_design_patterns_analysis/raw/master/builder/mr.simple/images/result.png" alt="result"></a></p>
 <p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x770B;AlertDialog&#x7684;&#x76F8;&#x5173;&#x6E90;&#x7801; :</p>
@@ -4008,55 +4008,55 @@
 }
 </code></pre>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x901A;&#x8FC7;Builder&#x6765;&#x8BBE;&#x7F6E;AlertDialog&#x4E2D;&#x7684;title, message, button&#x7B49;&#x53C2;&#x6570;&#xFF0C; &#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x90FD;&#x5B58;&#x50A8;&#x5728;&#x7C7B;&#x578B;&#x4E3A;AlertController.AlertParams&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;P&#x4E2D;&#xFF0C;AlertController.AlertParams&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3002;&#x5728;&#x8C03;&#x7528;Builder&#x7C7B;&#x7684;create&#x51FD;&#x6570;&#x65F6;&#x624D;&#x521B;&#x5EFA;AlertDialog, &#x5E76;&#x4E14;&#x5C06;Builder&#x6210;&#x5458;&#x53D8;&#x91CF;P&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x53C2;&#x6570;&#x5E94;&#x7528;&#x5230;AlertDialog&#x7684;mAlert&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x5373;P.apply(dialog.mAlert)&#x4EE3;&#x7801;&#x6BB5;&#x3002;&#x6211;&#x4EEC;&#x770B;&#x770B;apply&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0; :</p>
-<pre><code class="lang-java">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">apply</span><span class="hljs-params">(AlertController dialog)</span> </span>{
-            <span class="hljs-keyword">if</span> (mCustomTitleView != <span class="hljs-keyword">null</span>) {
-                dialog.setCustomTitle(mCustomTitleView);
-            } <span class="hljs-keyword">else</span> {
-                <span class="hljs-keyword">if</span> (mTitle != <span class="hljs-keyword">null</span>) {
-                    dialog.setTitle(mTitle);
-                }
-                <span class="hljs-keyword">if</span> (mIcon != <span class="hljs-keyword">null</span>) {
-                    dialog.setIcon(mIcon);
-                }
-                <span class="hljs-keyword">if</span> (mIconId &gt;= <span class="hljs-number">0</span>) {
-                    dialog.setIcon(mIconId);
-                }
-                <span class="hljs-keyword">if</span> (mIconAttrId &gt; <span class="hljs-number">0</span>) {
-                    dialog.setIcon(dialog.getIconAttributeResId(mIconAttrId));
-                }
-            }
-            <span class="hljs-keyword">if</span> (mMessage != <span class="hljs-keyword">null</span>) {
-                dialog.setMessage(mMessage);
-            }
-            <span class="hljs-keyword">if</span> (mPositiveButtonText != <span class="hljs-keyword">null</span>) {
-                dialog.setButton(DialogInterface.BUTTON_POSITIVE, mPositiveButtonText,
-                        mPositiveButtonListener, <span class="hljs-keyword">null</span>);
-            }
-            <span class="hljs-keyword">if</span> (mNegativeButtonText != <span class="hljs-keyword">null</span>) {
-                dialog.setButton(DialogInterface.BUTTON_NEGATIVE, mNegativeButtonText,
-                        mNegativeButtonListener, <span class="hljs-keyword">null</span>);
-            }
-            <span class="hljs-keyword">if</span> (mNeutralButtonText != <span class="hljs-keyword">null</span>) {
-                dialog.setButton(DialogInterface.BUTTON_NEUTRAL, mNeutralButtonText,
-                        mNeutralButtonListener, <span class="hljs-keyword">null</span>);
-            }
-            <span class="hljs-keyword">if</span> (mForceInverseBackground) {
-                dialog.setInverseBackgroundForced(<span class="hljs-keyword">true</span>);
-            }
-            <span class="hljs-comment">// For a list, the client can either supply an array of items or an</span>
-            <span class="hljs-comment">// adapter or a cursor</span>
-            <span class="hljs-keyword">if</span> ((mItems != <span class="hljs-keyword">null</span>) || (mCursor != <span class="hljs-keyword">null</span>) || (mAdapter != <span class="hljs-keyword">null</span>)) {
-                createListView(dialog);
-            }
-            <span class="hljs-keyword">if</span> (mView != <span class="hljs-keyword">null</span>) {
-                <span class="hljs-keyword">if</span> (mViewSpacingSpecified) {
-                    dialog.setView(mView, mViewSpacingLeft, mViewSpacingTop, mViewSpacingRight,
-                            mViewSpacingBottom);
-                } <span class="hljs-keyword">else</span> {
-                    dialog.setView(mView);
-                }
-            }
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">apply</span><span class="hljs-params">(AlertController dialog)</span> </span>{
+    <span class="hljs-keyword">if</span> (mCustomTitleView != <span class="hljs-keyword">null</span>) {
+        dialog.setCustomTitle(mCustomTitleView);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">if</span> (mTitle != <span class="hljs-keyword">null</span>) {
+            dialog.setTitle(mTitle);
         }
+        <span class="hljs-keyword">if</span> (mIcon != <span class="hljs-keyword">null</span>) {
+            dialog.setIcon(mIcon);
+        }
+        <span class="hljs-keyword">if</span> (mIconId &gt;= <span class="hljs-number">0</span>) {
+            dialog.setIcon(mIconId);
+        }
+        <span class="hljs-keyword">if</span> (mIconAttrId &gt; <span class="hljs-number">0</span>) {
+            dialog.setIcon(dialog.getIconAttributeResId(mIconAttrId));
+        }
+    }
+    <span class="hljs-keyword">if</span> (mMessage != <span class="hljs-keyword">null</span>) {
+        dialog.setMessage(mMessage);
+    }
+    <span class="hljs-keyword">if</span> (mPositiveButtonText != <span class="hljs-keyword">null</span>) {
+        dialog.setButton(DialogInterface.BUTTON_POSITIVE, mPositiveButtonText,
+                mPositiveButtonListener, <span class="hljs-keyword">null</span>);
+    }
+    <span class="hljs-keyword">if</span> (mNegativeButtonText != <span class="hljs-keyword">null</span>) {
+        dialog.setButton(DialogInterface.BUTTON_NEGATIVE, mNegativeButtonText,
+                mNegativeButtonListener, <span class="hljs-keyword">null</span>);
+    }
+    <span class="hljs-keyword">if</span> (mNeutralButtonText != <span class="hljs-keyword">null</span>) {
+        dialog.setButton(DialogInterface.BUTTON_NEUTRAL, mNeutralButtonText,
+                mNeutralButtonListener, <span class="hljs-keyword">null</span>);
+    }
+    <span class="hljs-keyword">if</span> (mForceInverseBackground) {
+        dialog.setInverseBackgroundForced(<span class="hljs-keyword">true</span>);
+    }
+    <span class="hljs-comment">// For a list, the client can either supply an array of items or an</span>
+    <span class="hljs-comment">// adapter or a cursor</span>
+    <span class="hljs-keyword">if</span> ((mItems != <span class="hljs-keyword">null</span>) || (mCursor != <span class="hljs-keyword">null</span>) || (mAdapter != <span class="hljs-keyword">null</span>)) {
+        createListView(dialog);
+    }
+    <span class="hljs-keyword">if</span> (mView != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">if</span> (mViewSpacingSpecified) {
+            dialog.setView(mView, mViewSpacingLeft, mViewSpacingTop, mViewSpacingRight,
+                    mViewSpacingBottom);
+        } <span class="hljs-keyword">else</span> {
+            dialog.setView(mView);
+        }
+    }
+}
 </code></pre>
 <p>&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x628A;P&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x6328;&#x4E2A;&#x7684;&#x8BBE;&#x7F6E;&#x5230;AlertController&#x4E2D;&#xFF0C; &#x4E5F;&#x5C31;&#x662F;AlertDialog&#x4E2D;&#x7684;mAlert&#x5BF9;&#x8C61;&#x3002;&#x4ECE;AlertDialog&#x7684;&#x5404;&#x4E2A;setter&#x65B9;&#x6CD5;&#x4E2D;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x90FD;&#x662F;&#x8C03;&#x7528;&#x4E86;mAlert&#x5BF9;&#x5E94;&#x7684;setter&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;Builder&#x540C;&#x65F6;&#x626E;&#x6F14;&#x4E86;&#x4E0A;&#x6587;&#x4E2D;&#x63D0;&#x5230;&#x7684;builder&#x3001;ConcreteBuilder&#x3001;Director&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x7B80;&#x5316;&#x4E86;Builder&#x6A21;&#x5F0F;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</p>
 <h2 id="&#x516D;&#x3001;&#x4F18;&#x7F3A;&#x70B9;"><a name="&#x516D;&#x3001;&#x4F18;&#x7F3A;&#x70B9;" class="plugin-anchor" href="#&#x516D;&#x3001;&#x4F18;&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516D;&#x3001;&#x4F18;&#x7F3A;&#x70B9;</h2>
@@ -4072,7 +4072,7 @@
 <li>&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x66B4;&#x9732;&#x3002; </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; ruheng.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2017-09-11 10:33:30
+2018-12-29 11:29:28
 </span></footer>
                                 
                                 </section>
@@ -4116,7 +4116,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"建造者模式","level":"6.1.5","depth":2,"next":{"title":"结构型模式","level":"6.2","depth":1,"path":"design-mode/Structural-Patterns.md","ref":"design-mode/Structural-Patterns.md","articles":[{"title":"适配器模式","level":"6.2.1","depth":2,"path":"design-mode/Structural-Patterns/Adapter-Pattern.md","ref":"design-mode/Structural-Patterns/Adapter-Pattern.md","articles":[]},{"title":"外观模式","level":"6.2.2","depth":2,"path":"design-mode/Structural-Patterns/Facade-Pattern.md","ref":"design-mode/Structural-Patterns/Facade-Pattern.md","articles":[]},{"title":"装饰者模式","level":"6.2.3","depth":2,"path":"design-mode/Structural-Patterns/Decorator-Pattern.md","ref":"design-mode/Structural-Patterns/Decorator-Pattern.md","articles":[]},{"title":"代理模式","level":"6.2.4","depth":2,"path":"design-mode/Structural-Patterns/Proxy-Pattern.md","ref":"design-mode/Structural-Patterns/Proxy-Pattern.md","articles":[]}]},"previous":{"title":"单例模式","level":"6.1.4","depth":2,"path":"design-mode/Builder-Pattern/Singleton-Pattern.md","ref":"design-mode/Builder-Pattern/Singleton-Pattern.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © ruheng.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/LRH1993/android_interview"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"LRH1993/android_interview","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/LRH1993/android_interview/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"ruheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android校招面试指南","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://lruheng.com/"}},"gitbook":"3.2.3","description":"Android面试必备，记录自己的秋招之路"},"file":{"path":"design-mode/Builder-Pattern/Builder-Pattern.md","mtime":"2017-09-11T02:33:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-16T23:10:00.749Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"建造者模式","level":"6.1.5","depth":2,"next":{"title":"结构型模式","level":"6.2","depth":1,"path":"design-mode/Structural-Patterns.md","ref":"design-mode/Structural-Patterns.md","articles":[{"title":"适配器模式","level":"6.2.1","depth":2,"path":"design-mode/Structural-Patterns/Adapter-Pattern.md","ref":"design-mode/Structural-Patterns/Adapter-Pattern.md","articles":[]},{"title":"外观模式","level":"6.2.2","depth":2,"path":"design-mode/Structural-Patterns/Facade-Pattern.md","ref":"design-mode/Structural-Patterns/Facade-Pattern.md","articles":[]},{"title":"装饰者模式","level":"6.2.3","depth":2,"path":"design-mode/Structural-Patterns/Decorator-Pattern.md","ref":"design-mode/Structural-Patterns/Decorator-Pattern.md","articles":[]},{"title":"代理模式","level":"6.2.4","depth":2,"path":"design-mode/Structural-Patterns/Proxy-Pattern.md","ref":"design-mode/Structural-Patterns/Proxy-Pattern.md","articles":[]}]},"previous":{"title":"单例模式","level":"6.1.4","depth":2,"path":"design-mode/Builder-Pattern/Singleton-Pattern.md","ref":"design-mode/Builder-Pattern/Singleton-Pattern.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © ruheng.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/LRH1993/android_interview"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"LRH1993/android_interview","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/LRH1993/android_interview/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"ruheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android校招面试指南","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://lruheng.com/"}},"gitbook":"3.2.3","description":"Android面试必备，记录自己的秋招之路"},"file":{"path":"design-mode/Builder-Pattern/Builder-Pattern.md","mtime":"2018-12-29T03:29:28.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T03:41:38.737Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
